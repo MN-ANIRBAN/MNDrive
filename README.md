@@ -1,4 +1,3 @@
-````markdown name=README.md url=https://github.com/MN-ANIRBAN/MNDrive/blob/main/README.md
 # MNCloudDrive (MNDrive)
 
 A modern TypeScript Next.js file manager web app — a small cloud-drive UI that provides authentication, file browsing, upload/delete controls, and reusable UI components for building a drive-like experience.
@@ -51,36 +50,11 @@ How it fits together:
 Prerequisites:
 - Node.js (16+ recommended) and npm or yarn.
 
-Quick start:
-```bash
-# from the repository root
-cd MNCloudDrive
-npm install
-
-# start the dev server
-npm run dev
-# or with yarn
-# yarn dev
-```
-
-Build and run production:
-```bash
-npm run build
-npm run start
-```
-
 Common npm scripts (defined in package.json)
 - dev — runs Next.js in development mode
 - build — builds the production output
 - start — starts the production server
 - lint — runs linting (if configured)
-
-If your environment requires secrets (API endpoints, auth keys), create a `.env.local` file in the MNCloudDrive folder and add the required variables. Example placeholders:
-```env
-# Example placeholders — replace with real values used by your app
-NEXT_PUBLIC_API_BASE_URL=https://api.example.com
-NEXTAUTH_URL=http://localhost:3000
-```
 
 (Inspect `next.config.mjs`, `src/lib/*`, and `src/app/auth` to identify the exact environment variables required.)
 
@@ -102,4 +76,3 @@ See the LICENSE file in the repository root for license details.
 - How does authentication get validated end-to-end? (see src/app/auth and src/middleware.ts)
 - Where are API endpoints implemented or proxied? (check src/lib/server.ts and next.config.mjs)
 - How are uploads and file metadata handled in the UI? (see src/components/file-manager-view.tsx and src/components/delete-button.tsx)
-````
